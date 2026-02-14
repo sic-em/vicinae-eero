@@ -2,6 +2,8 @@
 
 Manage your Eero mesh WiFi network from Vicinae.
 
+![Eero Extension Preview](assets/preview.png)
+
 ## Features
 
 - View and control connected devices
