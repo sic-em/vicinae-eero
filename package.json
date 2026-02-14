@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "eero",
+  "title": "Eero",
+  "description": "Manage your Eero mesh WiFi network - control devices, configure profiles, manage port forwarding, and monitor your network status right from Vicinae",
+  "categories": [],
+  "license": "MIT",
+  "author": "sic-em",
+  "contributors": [],
+  "pastContributors": [],
+  "icon": "extension_icon.png",
+  "commands": [
+    {
+      "name": "login",
+      "title": "Login",
+      "subtitle": "Authenticate with Eero",
+      "description": "Log in to your Eero network with email/phone verification",
+      "mode": "view"
+    },
+    {
+      "name": "status",
+      "title": "Status",
+      "subtitle": "Show authentication status",
+      "description": "Show authentication status and connection details",
+      "mode": "view"
+    },
+    {
+      "name": "devices",
+      "title": "Devices",
+      "subtitle": "Manage connected devices",
+      "description": "View and manage all devices connected to your network",
+      "mode": "view"
+    },
+    {
+      "name": "profiles",
+      "title": "Profiles",
+      "subtitle": "Manage family profiles",
+      "description": "View and manage family profiles and parental controls",
+      "mode": "view"
+    },
+    {
+      "name": "eeros",
+      "title": "Eeros",
+      "subtitle": "Manage mesh nodes",
+      "description": "View and manage your eero mesh network nodes",
+      "mode": "view"
+    },
+    {
+      "name": "guest",
+      "title": "Guest Network",
+      "subtitle": "Manage guest WiFi",
+      "description": "Enable, disable, and configure your guest network",
+      "mode": "view"
+    },
+    {
+      "name": "reboot",
+      "title": "Reboot Network",
+      "subtitle": "Restart your network",
+      "description": "Reboot your entire Eero mesh network",
+      "mode": "view"
+    },
+    {
+      "name": "reservations",
+      "title": "DHCP Reservations",
+      "subtitle": "Manage IP reservations",
+      "description": "Reserve static IP addresses for devices",
+      "mode": "view"
+    },
+    {
+      "name": "port-forwarding",
+      "title": "Port Forwarding",
+      "subtitle": "Forward external traffic",
+      "description": "Create and manage port forwarding rules",
+      "mode": "view"
+    }
+  ],
+  "preferences": [],
+  "dependencies": {},
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop",
+    "format": "biome format --write src",
+    "lint": "vici lint"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.2",
+    "@vicinae/api": "^0.19.8",
+    "typescript": "^5.9.2"
+  }
+}
